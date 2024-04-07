@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){int num, sum = 0;
+	printf("enter the num(3-digits): ");
+	scanf("%d",&num);
+	int rem ;
+	int tre = num;
+	while(num != 0){
+		rem = num % 10;
+		sum += rem*rem*rem;
+		num /= 10;
+	}
+	if(tre  ==  sum){
+		printf("%d is an armstrong number", tre);
+	}
+	else{
+		printf("%d is not an armstrong number",tre);
+	}
+	return 0;
+} 
